@@ -1,16 +1,11 @@
-import { N as NOOP_MIDDLEWARE_HEADER, D as DEFAULT_404_COMPONENT } from './astro/server_Pjo60tRN.mjs';
 import { parse } from 'devalue';
 import { escape } from 'html-escaper';
-
-const NOOP_MIDDLEWARE_FN = async (_ctx, next) => {
-  const response = await next();
-  response.headers.set(NOOP_MIDDLEWARE_HEADER, "true");
-  return response;
-};
+import { D as DEFAULT_404_COMPONENT } from './astro/server_Ckd9wkpS.mjs';
 
 const ACTION_QUERY_PARAMS = {
-  actionName: "_action",
-  actionPayload: "_astroActionPayload"
+  actionName: "_astroAction",
+  actionPayload: "_astroActionPayload",
+  actionRedirect: "_astroActionRedirect"
 };
 
 const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": undefined, "SSR": true};
@@ -256,8 +251,7 @@ const DEFAULT_404_ROUTE = {
   type: "page",
   route: "/404",
   fallbackRoutes: [],
-  isIndex: false,
-  origin: "internal"
+  isIndex: false
 };
 function ensure404Route(manifest) {
   if (!manifest.routes.some((route) => route.route === "/404")) {
@@ -273,7 +267,7 @@ async function default404Page({ pathname }) {
       tabTitle: "404: Not Found",
       pathname
     }),
-    { status: 404, headers: { "Content-Type": "text/html" } }
+    { status: 404, headers: { "Content-Type": "text/html; charset=utf-8" } }
   );
 }
 default404Page.isAstroComponentFactory = true;
@@ -281,4 +275,4 @@ const default404Instance = {
   default: default404Page
 };
 
-export { DEFAULT_404_ROUTE as D, NOOP_MIDDLEWARE_FN as N, default404Instance as a, deserializeActionResult as d, ensure404Route as e, getActionQueryString as g };
+export { DEFAULT_404_ROUTE as D, default404Instance as a, deserializeActionResult as d, ensure404Route as e, getActionQueryString as g };

@@ -12,4 +12,4 @@ const setup = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   setGetEnv
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { setup as a, setOnSetGetEnv as s };
+export { setGetEnv as a, setup as b, setOnSetGetEnv as s };

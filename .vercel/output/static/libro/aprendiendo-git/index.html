@@ -1,6 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Aprendiendo Git y GitHub - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js"></script><link rel="stylesheet" href="/_astro/index.DDN1q8JZ.css">
-<style>[data-astro-image]{width:100%;height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);aspect-ratio:var(--w) / var(--h)}[data-astro-image=responsive]{max-width:calc(var(--w) * 1px);max-height:calc(var(--h) * 1px)}[data-astro-image=fixed]{width:calc(var(--w) * 1px);height:calc(var(--h) * 1px)}
-</style><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-aprendiendo-git; }@layer astro { ::view-transition-old(img-aprendiendo-git) { 
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Aprendiendo Git y GitHub - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CmkSwYHY.js"></script><link rel="stylesheet" href="/_astro/index.Beu1aV62.css"><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-aprendiendo-git; }@layer astro { ::view-transition-old(img-aprendiendo-git) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -72,50 +70,48 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/aprendiendo-git.jpg" alt="Aprendiendo Git y GitHub" data-astro-transition-scope="astro-sjcdew3a-1"> <!--[if astro]>server-island-start<![endif]--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=2A497C527FBCF04A5226BE29nif%2Fm3rzxz5aE8%2FLZ6fTC4tRjn3Ld4l%2FHW7iJcCj8GNpF35QmIIJJw%3D%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="d8286fd9-2263-4e70-9424-bef56d34df6c">
-let script = document.querySelector('script[data-island-id="d8286fd9-2263-4e70-9424-bef56d34df6c"]');
+	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/aprendiendo-git.jpg" alt="Aprendiendo Git y GitHub" data-astro-transition-scope="astro-sjcdew3a-1"> <!--server-island-start--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=5AB6C866BFD7796E5C1DAAABRTPoC0vUnj2w6r%2BQv4KjkplLPFD7P8oOcFSF%2FwqBL7bMhaPRljFu%2FA%3D%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="b23f8f43-85d4-44ae-811c-3bce50cded25">
+let script = document.querySelector('script[data-island-id="b23f8f43-85d4-44ae-811c-3bce50cded25"]');
 
-let response = await fetch('/_server-islands/BookScore?e=default&p=2A497C527FBCF04A5226BE29nif%2Fm3rzxz5aE8%2FLZ6fTC4tRjn3Ld4l%2FHW7iJcCj8GNpF35QmIIJJw%3D%3D&s=%7B%7D');
+let response = await fetch('/_server-islands/BookScore?e=default&p=5AB6C866BFD7796E5C1DAAABRTPoC0vUnj2w6r%2BQv4KjkplLPFD7P8oOcFSF%2FwqBL7bMhaPRljFu%2FA%3D%3D&s=%7B%7D');
 
-if (script) {
-	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-		let html = await response.text();
-	
-		// Swap!
-		while(script.previousSibling &&
-			script.previousSibling.nodeType !== 8 &&
-			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
-			script.previousSibling.remove();
-		}
-		script.previousSibling?.remove();
-	
-		let frag = document.createRange().createContextualFragment(html);
-		script.before(frag);
+
+if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+	let html = await response.text();
+
+	// Swap!
+	while(script.previousSibling &&
+		script.previousSibling.nodeType !== 8 &&
+		script.previousSibling.data !== 'server-island-start') {
+		script.previousSibling.remove();
 	}
-	script.remove();
+	script.previousSibling?.remove();
+
+	let frag = document.createRange().createContextualFragment(html);
+	script.before(frag);
 }
-</script> <!--[if astro]>server-island-start<![endif]--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=99482A35110A3B5158A0D281S%2F0Fn6cRnZ4qVDfJRtc6LqEJybaje5x8ylBhseEh77Q6knnsJCXiLCXZfpEWknPFrsHbetV6NfuDUIUZjPDJK%2BdbeK10HIfhMoCRrjWqWiOqmzG0h%2FoSI2%2BfhaxV5W12NfugV%2BcSY3L9VmZkPHXEcjHS0HeTJkNIk%2BMVoQNwnEt2CDg28i3cV6sMrl36YEPGCaLC9UJ6&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="0d462619-ec90-440f-88f6-d9a80256d2c6">
-let script = document.querySelector('script[data-island-id="0d462619-ec90-440f-88f6-d9a80256d2c6"]');
+script.remove();
+</script> <!--server-island-start--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=F769855115ADDB4CF27A2F33lpjMFTSsFr0OqDrir%2F3SZLAKXh2eIgnKPKALwA64BeMR1w1OMrLwh8vfE4B46zw1bch4PIbCPWHcrmEdHoJ6svbIEhcizVOXwNTkhsmQ%2B9jso1MfrfGxM%2FVJMN58fzPzFHkphHDZuu4BKcYB8UpTZLUUCFpaXQgeN4a9bdRdd%2FIQWXe2V8re7m3DHGt6GdCy46IGwWba&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="5228ea00-efb8-4a01-9e5b-0a72a6bae47e">
+let script = document.querySelector('script[data-island-id="5228ea00-efb8-4a01-9e5b-0a72a6bae47e"]');
 
-let response = await fetch('/_server-islands/BuyButton?e=default&p=99482A35110A3B5158A0D281S%2F0Fn6cRnZ4qVDfJRtc6LqEJybaje5x8ylBhseEh77Q6knnsJCXiLCXZfpEWknPFrsHbetV6NfuDUIUZjPDJK%2BdbeK10HIfhMoCRrjWqWiOqmzG0h%2FoSI2%2BfhaxV5W12NfugV%2BcSY3L9VmZkPHXEcjHS0HeTJkNIk%2BMVoQNwnEt2CDg28i3cV6sMrl36YEPGCaLC9UJ6&s=%7B%7D');
+let response = await fetch('/_server-islands/BuyButton?e=default&p=F769855115ADDB4CF27A2F33lpjMFTSsFr0OqDrir%2F3SZLAKXh2eIgnKPKALwA64BeMR1w1OMrLwh8vfE4B46zw1bch4PIbCPWHcrmEdHoJ6svbIEhcizVOXwNTkhsmQ%2B9jso1MfrfGxM%2FVJMN58fzPzFHkphHDZuu4BKcYB8UpTZLUUCFpaXQgeN4a9bdRdd%2FIQWXe2V8re7m3DHGt6GdCy46IGwWba&s=%7B%7D');
 
-if (script) {
-	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-		let html = await response.text();
-	
-		// Swap!
-		while(script.previousSibling &&
-			script.previousSibling.nodeType !== 8 &&
-			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
-			script.previousSibling.remove();
-		}
-		script.previousSibling?.remove();
-	
-		let frag = document.createRange().createContextualFragment(html);
-		script.before(frag);
+
+if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+	let html = await response.text();
+
+	// Swap!
+	while(script.previousSibling &&
+		script.previousSibling.nodeType !== 8 &&
+		script.previousSibling.data !== 'server-island-start') {
+		script.previousSibling.remove();
 	}
-	script.remove();
+	script.previousSibling?.remove();
+
+	let frag = document.createRange().createContextualFragment(html);
+	script.before(frag);
 }
+script.remove();
 </script>
     
     

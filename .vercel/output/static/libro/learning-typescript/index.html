@@ -1,6 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Learning TypeScript - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js"></script><link rel="stylesheet" href="/_astro/index.DDN1q8JZ.css">
-<style>[data-astro-image]{width:100%;height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);aspect-ratio:var(--w) / var(--h)}[data-astro-image=responsive]{max-width:calc(var(--w) * 1px);max-height:calc(var(--h) * 1px)}[data-astro-image=fixed]{width:calc(var(--w) * 1px);height:calc(var(--h) * 1px)}
-</style><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-learning-typescript; }@layer astro { ::view-transition-old(img-learning-typescript) { 
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Learning TypeScript - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CmkSwYHY.js"></script><link rel="stylesheet" href="/_astro/index.Beu1aV62.css"><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-learning-typescript; }@layer astro { ::view-transition-old(img-learning-typescript) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -72,50 +70,48 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/learning-typescript.jpg" alt="Learning TypeScript" data-astro-transition-scope="astro-sjcdew3a-1"> <!--[if astro]>server-island-start<![endif]--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=DE2B75CEE9DAE9DF0D23C3CBqro7aGrD0E1gdM7YrUCgJsnIYCAKfSH471uW9xmR3ZURQC1Q8pBXTvFB%2FpI%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="3f40dca8-6f3e-4c03-bd7f-0b4991fb1f6a">
-let script = document.querySelector('script[data-island-id="3f40dca8-6f3e-4c03-bd7f-0b4991fb1f6a"]');
+	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/learning-typescript.jpg" alt="Learning TypeScript" data-astro-transition-scope="astro-sjcdew3a-1"> <!--server-island-start--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=D0D4B1D2162796942E43A59BcoaoVrW3l57GToseix12ZnniOV%2BaFHQRoagY8uBtOYLJmAOdNxw1%2FvCPR4s%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="27afee8d-c270-498f-b76c-eb50311eab74">
+let script = document.querySelector('script[data-island-id="27afee8d-c270-498f-b76c-eb50311eab74"]');
 
-let response = await fetch('/_server-islands/BookScore?e=default&p=DE2B75CEE9DAE9DF0D23C3CBqro7aGrD0E1gdM7YrUCgJsnIYCAKfSH471uW9xmR3ZURQC1Q8pBXTvFB%2FpI%3D&s=%7B%7D');
+let response = await fetch('/_server-islands/BookScore?e=default&p=D0D4B1D2162796942E43A59BcoaoVrW3l57GToseix12ZnniOV%2BaFHQRoagY8uBtOYLJmAOdNxw1%2FvCPR4s%3D&s=%7B%7D');
 
-if (script) {
-	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-		let html = await response.text();
-	
-		// Swap!
-		while(script.previousSibling &&
-			script.previousSibling.nodeType !== 8 &&
-			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
-			script.previousSibling.remove();
-		}
-		script.previousSibling?.remove();
-	
-		let frag = document.createRange().createContextualFragment(html);
-		script.before(frag);
+
+if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+	let html = await response.text();
+
+	// Swap!
+	while(script.previousSibling &&
+		script.previousSibling.nodeType !== 8 &&
+		script.previousSibling.data !== 'server-island-start') {
+		script.previousSibling.remove();
 	}
-	script.remove();
+	script.previousSibling?.remove();
+
+	let frag = document.createRange().createContextualFragment(html);
+	script.before(frag);
 }
-</script> <!--[if astro]>server-island-start<![endif]--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=34AC1532D847330D01F24D9BEL4xqC4VxQ57g82D%2B5nbVX63lsZMsiW53eGhOHDMQqx4HtGN%2FMr0Mg2b02OvZtF7RCaZsy0J7RFKscIdajF8PjeTcZsha2o9yBfqD%2BV0ULyP3egB%2F3WQ7H75m5uSz1VmsZvtJoMSMU%2F2URsqjhyL7la5bl7WYuoZaFsZ&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="872ac1c2-d3ee-4769-a8f9-c4326049abeb">
-let script = document.querySelector('script[data-island-id="872ac1c2-d3ee-4769-a8f9-c4326049abeb"]');
+script.remove();
+</script> <!--server-island-start--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=2D81A81B14F6BDBE84BD4CB0iIWo%2BIL9GeXXwVjBNAWEARhI0Gt1x6P%2FVghi8gyavoJh1FJjpOMAA%2BJlMCtjWRMEEi0i0YhDQMRNip0q4VYu77k1%2FIiapsf3MDAasEXblqPCb8azS0%2BsPXAypQhg%2BIwtC0nZYSGn1VaWKHXXPMJ1t9XYEbzH2Isjh1r3&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="47f444c8-6f27-4e33-be24-0cb0cdc2dc91">
+let script = document.querySelector('script[data-island-id="47f444c8-6f27-4e33-be24-0cb0cdc2dc91"]');
 
-let response = await fetch('/_server-islands/BuyButton?e=default&p=34AC1532D847330D01F24D9BEL4xqC4VxQ57g82D%2B5nbVX63lsZMsiW53eGhOHDMQqx4HtGN%2FMr0Mg2b02OvZtF7RCaZsy0J7RFKscIdajF8PjeTcZsha2o9yBfqD%2BV0ULyP3egB%2F3WQ7H75m5uSz1VmsZvtJoMSMU%2F2URsqjhyL7la5bl7WYuoZaFsZ&s=%7B%7D');
+let response = await fetch('/_server-islands/BuyButton?e=default&p=2D81A81B14F6BDBE84BD4CB0iIWo%2BIL9GeXXwVjBNAWEARhI0Gt1x6P%2FVghi8gyavoJh1FJjpOMAA%2BJlMCtjWRMEEi0i0YhDQMRNip0q4VYu77k1%2FIiapsf3MDAasEXblqPCb8azS0%2BsPXAypQhg%2BIwtC0nZYSGn1VaWKHXXPMJ1t9XYEbzH2Isjh1r3&s=%7B%7D');
 
-if (script) {
-	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-		let html = await response.text();
-	
-		// Swap!
-		while(script.previousSibling &&
-			script.previousSibling.nodeType !== 8 &&
-			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
-			script.previousSibling.remove();
-		}
-		script.previousSibling?.remove();
-	
-		let frag = document.createRange().createContextualFragment(html);
-		script.before(frag);
+
+if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+	let html = await response.text();
+
+	// Swap!
+	while(script.previousSibling &&
+		script.previousSibling.nodeType !== 8 &&
+		script.previousSibling.data !== 'server-island-start') {
+		script.previousSibling.remove();
 	}
-	script.remove();
+	script.previousSibling?.remove();
+
+	let frag = document.createRange().createContextualFragment(html);
+	script.before(frag);
 }
+script.remove();
 </script>
     
     
