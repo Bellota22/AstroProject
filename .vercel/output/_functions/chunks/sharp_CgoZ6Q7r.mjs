@@ -1,5 +1,5 @@
-import { A as AstroError, M as MissingSharp } from './astro/server_Ckd9wkpS.mjs';
-import { b as baseService, p as parseQuality } from './_astro_assets_DjE8Ygw3.mjs';
+import { A as AstroError, M as MissingSharp } from './astro/server_Pjo60tRN.mjs';
+import { b as baseService, p as parseQuality } from './_astro_assets_BlVT2Ml6.mjs';
 
 let sharp;
 const qualityTable = {
@@ -18,6 +18,15 @@ async function loadSharp() {
   sharpImport.cache(false);
   return sharpImport;
 }
+const fitMap = {
+  fill: "fill",
+  contain: "inside",
+  cover: "cover",
+  none: "outside",
+  "scale-down": "inside",
+  outside: "outside",
+  inside: "inside"
+};
 const sharpService = {
   validateOptions: baseService.validateOptions,
   getURL: baseService.getURL,
@@ -34,10 +43,26 @@ const sharpService = {
       limitInputPixels: config.service.config.limitInputPixels
     });
     result.rotate();
-    if (transform.height && !transform.width) {
-      result.resize({ height: Math.round(transform.height) });
+    const withoutEnlargement = Boolean(transform.fit);
+    if (transform.width && transform.height && transform.fit) {
+      const fit = fitMap[transform.fit] ?? "inside";
+      result.resize({
+        width: Math.round(transform.width),
+        height: Math.round(transform.height),
+        fit,
+        position: transform.position,
+        withoutEnlargement
+      });
+    } else if (transform.height && !transform.width) {
+      result.resize({
+        height: Math.round(transform.height),
+        withoutEnlargement
+      });
     } else if (transform.width) {
-      result.resize({ width: Math.round(transform.width) });
+      result.resize({
+        width: Math.round(transform.width),
+        withoutEnlargement
+      });
     }
     if (transform.format) {
       let quality = void 0;

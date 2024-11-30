@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Learning TypeScript - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CmkSwYHY.js"></script><link rel="stylesheet" href="/_astro/index.Beu1aV62.css"><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-learning-typescript; }@layer astro { ::view-transition-old(img-learning-typescript) { 
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Learning TypeScript - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js"></script><link rel="stylesheet" href="/_astro/index.DDN1q8JZ.css">
+<style>[data-astro-image]{width:100%;height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);aspect-ratio:var(--w) / var(--h)}[data-astro-image=responsive]{max-width:calc(var(--w) * 1px);max-height:calc(var(--h) * 1px)}[data-astro-image=fixed]{width:calc(var(--w) * 1px);height:calc(var(--h) * 1px)}
+</style><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-learning-typescript; }@layer astro { ::view-transition-old(img-learning-typescript) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -70,48 +72,50 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/learning-typescript.jpg" alt="Learning TypeScript" data-astro-transition-scope="astro-sjcdew3a-1"> <!--server-island-start--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=D0D4B1D2162796942E43A59BcoaoVrW3l57GToseix12ZnniOV%2BaFHQRoagY8uBtOYLJmAOdNxw1%2FvCPR4s%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="27afee8d-c270-498f-b76c-eb50311eab74">
-let script = document.querySelector('script[data-island-id="27afee8d-c270-498f-b76c-eb50311eab74"]');
+	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/learning-typescript.jpg" alt="Learning TypeScript" data-astro-transition-scope="astro-sjcdew3a-1"> <!--[if astro]>server-island-start<![endif]--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=F8272AB3B2571A2085A78C530fQcJHqGdwDeNK9Jdgv9OWqBw%2Blb2wD4425P%2FaKoHUO5gfMUrQwMuOdYYvk%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="f7b3c602-1600-4981-a0bd-cbe41c15defb">
+let script = document.querySelector('script[data-island-id="f7b3c602-1600-4981-a0bd-cbe41c15defb"]');
 
-let response = await fetch('/_server-islands/BookScore?e=default&p=D0D4B1D2162796942E43A59BcoaoVrW3l57GToseix12ZnniOV%2BaFHQRoagY8uBtOYLJmAOdNxw1%2FvCPR4s%3D&s=%7B%7D');
+let response = await fetch('/_server-islands/BookScore?e=default&p=F8272AB3B2571A2085A78C530fQcJHqGdwDeNK9Jdgv9OWqBw%2Blb2wD4425P%2FaKoHUO5gfMUrQwMuOdYYvk%3D&s=%7B%7D');
 
-
-if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-	let html = await response.text();
-
-	// Swap!
-	while(script.previousSibling &&
-		script.previousSibling.nodeType !== 8 &&
-		script.previousSibling.data !== 'server-island-start') {
-		script.previousSibling.remove();
+if (script) {
+	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+		let html = await response.text();
+	
+		// Swap!
+		while(script.previousSibling &&
+			script.previousSibling.nodeType !== 8 &&
+			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
+			script.previousSibling.remove();
+		}
+		script.previousSibling?.remove();
+	
+		let frag = document.createRange().createContextualFragment(html);
+		script.before(frag);
 	}
-	script.previousSibling?.remove();
-
-	let frag = document.createRange().createContextualFragment(html);
-	script.before(frag);
+	script.remove();
 }
-script.remove();
-</script> <!--server-island-start--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=2D81A81B14F6BDBE84BD4CB0iIWo%2BIL9GeXXwVjBNAWEARhI0Gt1x6P%2FVghi8gyavoJh1FJjpOMAA%2BJlMCtjWRMEEi0i0YhDQMRNip0q4VYu77k1%2FIiapsf3MDAasEXblqPCb8azS0%2BsPXAypQhg%2BIwtC0nZYSGn1VaWKHXXPMJ1t9XYEbzH2Isjh1r3&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="47f444c8-6f27-4e33-be24-0cb0cdc2dc91">
-let script = document.querySelector('script[data-island-id="47f444c8-6f27-4e33-be24-0cb0cdc2dc91"]');
+</script> <!--[if astro]>server-island-start<![endif]--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=80E380CF6FD8D7EF0A12571FYrvkISiV0uB6uKnE54IduVcJ1WGbHOrbufc%2BWCefGNSMNRhlYkW9TlyvFFB%2FEDwfewi67YMq%2B0fMvFtxCQz3cxWs06T%2FKNw77DHGDE0ystS31j6%2BQEFz6PxjKpkPetSBJB6%2F9PFbFiEnl%2F7b5bLi8TrYfAjbLfzCYtM2&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="7676ee54-0ca6-45df-8dc2-c7ff1107ca82">
+let script = document.querySelector('script[data-island-id="7676ee54-0ca6-45df-8dc2-c7ff1107ca82"]');
 
-let response = await fetch('/_server-islands/BuyButton?e=default&p=2D81A81B14F6BDBE84BD4CB0iIWo%2BIL9GeXXwVjBNAWEARhI0Gt1x6P%2FVghi8gyavoJh1FJjpOMAA%2BJlMCtjWRMEEi0i0YhDQMRNip0q4VYu77k1%2FIiapsf3MDAasEXblqPCb8azS0%2BsPXAypQhg%2BIwtC0nZYSGn1VaWKHXXPMJ1t9XYEbzH2Isjh1r3&s=%7B%7D');
+let response = await fetch('/_server-islands/BuyButton?e=default&p=80E380CF6FD8D7EF0A12571FYrvkISiV0uB6uKnE54IduVcJ1WGbHOrbufc%2BWCefGNSMNRhlYkW9TlyvFFB%2FEDwfewi67YMq%2B0fMvFtxCQz3cxWs06T%2FKNw77DHGDE0ystS31j6%2BQEFz6PxjKpkPetSBJB6%2F9PFbFiEnl%2F7b5bLi8TrYfAjbLfzCYtM2&s=%7B%7D');
 
-
-if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-	let html = await response.text();
-
-	// Swap!
-	while(script.previousSibling &&
-		script.previousSibling.nodeType !== 8 &&
-		script.previousSibling.data !== 'server-island-start') {
-		script.previousSibling.remove();
+if (script) {
+	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+		let html = await response.text();
+	
+		// Swap!
+		while(script.previousSibling &&
+			script.previousSibling.nodeType !== 8 &&
+			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
+			script.previousSibling.remove();
+		}
+		script.previousSibling?.remove();
+	
+		let frag = document.createRange().createContextualFragment(html);
+		script.before(frag);
 	}
-	script.previousSibling?.remove();
-
-	let frag = document.createRange().createContextualFragment(html);
-	script.before(frag);
+	script.remove();
 }
-script.remove();
 </script>
     
     

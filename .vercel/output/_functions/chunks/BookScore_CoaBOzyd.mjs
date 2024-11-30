@@ -1,12 +1,13 @@
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead } from './astro/server_Ckd9wkpS.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead } from './astro/server_Pjo60tRN.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { s as setOnSetGetEnv } from './setup_qUz3GmrZ.mjs';
+import { s as setOnSetGetEnv } from './runtime_D4VX3l65.mjs';
 
 // @ts-check
 
 // used while generating the virtual module
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// biome-ignore lint/correctness/noUnusedFunctionParameters: `reset` is used by the generated code
+// biome-ignore lint/correctness/noUnusedVariables: `reset` is used by the generated code
 setOnSetGetEnv((reset) => {
 	
 });

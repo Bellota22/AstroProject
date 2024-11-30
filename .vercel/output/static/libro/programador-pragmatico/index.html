@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Programador Pragmatico - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CmkSwYHY.js"></script><link rel="stylesheet" href="/_astro/index.Beu1aV62.css"><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-programador-pragmatico; }@layer astro { ::view-transition-old(img-programador-pragmatico) { 
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Programador Pragmatico - Dev</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js"></script><link rel="stylesheet" href="/_astro/index.DDN1q8JZ.css">
+<style>[data-astro-image]{width:100%;height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);aspect-ratio:var(--w) / var(--h)}[data-astro-image=responsive]{max-width:calc(var(--w) * 1px);max-height:calc(var(--h) * 1px)}[data-astro-image=fixed]{width:calc(var(--w) * 1px);height:calc(var(--h) * 1px)}
+</style><style>[data-astro-transition-scope="astro-sjcdew3a-1"] { view-transition-name: img-programador-pragmatico; }@layer astro { ::view-transition-old(img-programador-pragmatico) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -70,48 +72,50 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/programador-pragmatico.jpg" alt="Programador Pragmatico" data-astro-transition-scope="astro-sjcdew3a-1"> <!--server-island-start--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=FF9FAAD8C277D33C7D3883816oXf%2BLwEor5WM0goFj3A0B36G%2FNJm7NXtnxQLa0nvC144uO8WyRW22nqs87hd%2FY%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="0d6c0af3-4897-4c26-b7ce-0c780b833887">
-let script = document.querySelector('script[data-island-id="0d6c0af3-4897-4c26-b7ce-0c780b833887"]');
+	animation-name: astroFadeIn; }</style></head> <body> <div>  <div class="flex gap-12"> <aside class=" flex flex-col items-center gap-4"> <a href="/" class="hover:underline opacity-70">👈 Volver</a> <img class="rounded- w-72 h-auto" src="/programador-pragmatico.jpg" alt="Programador Pragmatico" data-astro-transition-scope="astro-sjcdew3a-1"> <!--[if astro]>server-island-start<![endif]--><span class="text-xs opacity-70">Cargando puntuación</span><link rel="preload" as="fetch" href="/_server-islands/BookScore?e=default&p=000B39D0DD77E0D0F76287BAvu%2BQ%2BCyXnZs1ZicQVpBVvU47RwUohgX9UyqmxjZugoaeaXtuk2d4f4kCQMLw4oQ%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="e557ea70-9ce3-4718-9027-be7c2ba26203">
+let script = document.querySelector('script[data-island-id="e557ea70-9ce3-4718-9027-be7c2ba26203"]');
 
-let response = await fetch('/_server-islands/BookScore?e=default&p=FF9FAAD8C277D33C7D3883816oXf%2BLwEor5WM0goFj3A0B36G%2FNJm7NXtnxQLa0nvC144uO8WyRW22nqs87hd%2FY%3D&s=%7B%7D');
+let response = await fetch('/_server-islands/BookScore?e=default&p=000B39D0DD77E0D0F76287BAvu%2BQ%2BCyXnZs1ZicQVpBVvU47RwUohgX9UyqmxjZugoaeaXtuk2d4f4kCQMLw4oQ%3D&s=%7B%7D');
 
-
-if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-	let html = await response.text();
-
-	// Swap!
-	while(script.previousSibling &&
-		script.previousSibling.nodeType !== 8 &&
-		script.previousSibling.data !== 'server-island-start') {
-		script.previousSibling.remove();
+if (script) {
+	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+		let html = await response.text();
+	
+		// Swap!
+		while(script.previousSibling &&
+			script.previousSibling.nodeType !== 8 &&
+			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
+			script.previousSibling.remove();
+		}
+		script.previousSibling?.remove();
+	
+		let frag = document.createRange().createContextualFragment(html);
+		script.before(frag);
 	}
-	script.previousSibling?.remove();
-
-	let frag = document.createRange().createContextualFragment(html);
-	script.before(frag);
+	script.remove();
 }
-script.remove();
-</script> <!--server-island-start--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=636896C3D061A2A647AC422Dhb4%2FOAu0wgPjKsEPZ%2BV6905YL0aZ4YSWVMRhlKD6MuJciFCw1IZC%2FKmrfJ6tDmDm5FYVj3Q%2FZslkb5iv4nb6vTUEnZUvFSaw1Bk1qe15psjhkWpkW2V3xk0LzeHcTFDjZ1YLixEkmmNqKMRiWLO2tUU5b0Jvu7qiqw%3D%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="59f08e51-49a4-4bcf-acc9-8d99d425d2d3">
-let script = document.querySelector('script[data-island-id="59f08e51-49a4-4bcf-acc9-8d99d425d2d3"]');
+</script> <!--[if astro]>server-island-start<![endif]--><link rel="preload" as="fetch" href="/_server-islands/BuyButton?e=default&p=91DB8B37D671AE78244525D4GUvBZNxVObBixE%2FxPj%2BmHEfp%2FECtYhwAP9Du3fLmg%2Fa8H1Z7eUn0dneuP46M0F%2BjN3L0qiKaDXeZIAZL5c435tJ%2FvqmmiRdJILNuikVJjuEdOBX1JvbnDQFDIS8NGN2imlmPbhwultG9jRlFffbORgsm2qqNNDCd6A%3D%3D&s=%7B%7D" crossorigin="anonymous"><script async type="module" data-island-id="0066f680-3d38-4012-828e-388fe3d02007">
+let script = document.querySelector('script[data-island-id="0066f680-3d38-4012-828e-388fe3d02007"]');
 
-let response = await fetch('/_server-islands/BuyButton?e=default&p=636896C3D061A2A647AC422Dhb4%2FOAu0wgPjKsEPZ%2BV6905YL0aZ4YSWVMRhlKD6MuJciFCw1IZC%2FKmrfJ6tDmDm5FYVj3Q%2FZslkb5iv4nb6vTUEnZUvFSaw1Bk1qe15psjhkWpkW2V3xk0LzeHcTFDjZ1YLixEkmmNqKMRiWLO2tUU5b0Jvu7qiqw%3D%3D&s=%7B%7D');
+let response = await fetch('/_server-islands/BuyButton?e=default&p=91DB8B37D671AE78244525D4GUvBZNxVObBixE%2FxPj%2BmHEfp%2FECtYhwAP9Du3fLmg%2Fa8H1Z7eUn0dneuP46M0F%2BjN3L0qiKaDXeZIAZL5c435tJ%2FvqmmiRdJILNuikVJjuEdOBX1JvbnDQFDIS8NGN2imlmPbhwultG9jRlFffbORgsm2qqNNDCd6A%3D%3D&s=%7B%7D');
 
-
-if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
-	let html = await response.text();
-
-	// Swap!
-	while(script.previousSibling &&
-		script.previousSibling.nodeType !== 8 &&
-		script.previousSibling.data !== 'server-island-start') {
-		script.previousSibling.remove();
+if (script) {
+	if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+		let html = await response.text();
+	
+		// Swap!
+		while(script.previousSibling &&
+			script.previousSibling.nodeType !== 8 &&
+			script.previousSibling.data !== '[if astro]>server-island-start<![endif]') {
+			script.previousSibling.remove();
+		}
+		script.previousSibling?.remove();
+	
+		let frag = document.createRange().createContextualFragment(html);
+		script.before(frag);
 	}
-	script.previousSibling?.remove();
-
-	let frag = document.createRange().createContextualFragment(html);
-	script.before(frag);
+	script.remove();
 }
-script.remove();
 </script>
     
     
